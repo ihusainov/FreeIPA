@@ -115,3 +115,40 @@ Configured /etc/krb5.conf for IPA realm MYDOMAIN.LOCAL
 ```
 
 **Congratulations!!!**
+
+----
+**Troubleshooting**
+----
+
+**Install freeipa-client in debian 9**
+
+Add in source list  /etc/apt/sources.list
+```bash
+
+deb http://http.us.debian.org/debian unstable main non-free contrib
+deb-src http://http.us.debian.org/debian unstable main non-free contrib
+
+```
+
+Next update packages and install freeipa-client
+```bash
+
+apt update
+apt install python-gi
+apt install freeipa-client/unstable
+/usr/sbin/ipa-client-install
+```
+
+
+Next edit source list  /etc/apt/sources.list
+```bash
+
+deb http://ftp.de.debian.org/debian stretch main contrib non-free
+deb http://security.debian.org stretch/updates main contrib non-free
+#deb http://http.us.debian.org/debian unstable main non-free contrib
+#deb-src http://http.us.debian.org/debian unstable main non-free contrib
+
+```
+
+
+**Congratulations!!!**
