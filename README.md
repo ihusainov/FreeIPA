@@ -1,4 +1,4 @@
-# FreeIPA-settings
+# FreeIPA
 
 **Install as docker container**
 
